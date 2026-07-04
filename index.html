@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>האתר שלי</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="welcome-popup-overlay" class="popup-overlay">
+    <div class="popup-content">
+        <button id="close-popup-btn" class="popup-close-x" title="סגירה">&times;</button>
+        <div class="popup-body">
+            <span class="popup-tag">🔥 מבצע מיוחד לשבוע זה</span>
+            <h3>חגיגת פסטל ב-Chani Store!</h3>
+            <p>קבלו <strong>15% הנחה נוספת</strong> על כל קטגוריית הלפטופים והסמארטפונים!</p>
+            <div class="popup-code">קוד קופון: <span class="code-highlight">CHANI15</span></div>
+        </div>
+    </div>
+</div>
+   <header class="main-header">
+    <div class="header-container">
+       <div class="logo" title="חזרה לעמוד הראשי">
+    <div class="logo-home-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-home">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+    </div>
+    
+    <div class="logo-badge">Chani</div>
+</div>
+        
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="חפשו מוצרים...">
+            <button id="search-button">חיפוש</button>
+        </div>
+        
+        <div class="cart-icon-container">
+            <a href="#" id="cart-link" class="cart-link">
+                🛒 סל קניות (<span id="cart-count">0</span>)
+            </a>
+        </div>
+
+        <div id="user-auth-container" class="user-auth-container"></div>
+    </div>
+</header>
+
+    <nav class="categories-nav">
+        <ul id="categories-menu"></ul>
+    </nav>
+
+    <main class="main-content">
+        <section id="content-area">
+            <h2>ברוכים הבאים לחנות שלנו!</h2>
+            <p>טוען מוצרים מומלצים עבורכם...</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>MyStore</h3>
+                <p>פרוייקט סופי אתר קניות לשנת 2026</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>יצירת קשר</h3>
+                <p>📞 טלפון: 0502211781</p>
+                <p>📧 מייל: ch0502211781@gmail.com</p>
+                <p>📍 מיקום: מכללת עזריאלי להנדסה, ירושלים</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>מרכז סיוע</h3>
+                <p>נתקלת בבעיה באתר? צוות התמיכה שלנו זמין עבורך לכל שאלה ופנייה.</p>
+                <a href="#" id="btn-support-help" class="support-link">📧 לחצו כאן לפנייה לסיוע ותמיכה טכנית</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MyStore | כל הזכויות שמורות</p>
+        </div>
+    </footer>
+
+    <script type="module" src="api.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
